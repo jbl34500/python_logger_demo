@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Démo Python Logger</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+    button { font-size: 1.2em; padding: 10px 20px; cursor: pointer; }
+  </style>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ZQYWSB7R98'); // Remplace par ton ID GA4
+  </script>
+</head>
+<body>
+  <h1>Démo Python Logger</h1>
+  <p>Cliquez sur le bouton pour accéder à la page GitHub et voir le README :</p>
+  <button id="githubBtn">Voir sur GitHub</button>
+
+  <script>
+    document.getElementById('githubBtn').addEventListener('click', () => {
+      // Envoi d'un événement à Google Analytics
+      gtag('event', 'click_github', {
+        'event_category': 'Navigation',
+        'event_label': 'Accès GitHub README'
+      });
+
+      // Redirection vers ton dépôt GitHub
+      window.location.href = "https://github.com/jbl34500/python_logger_demo/";
+    });
+  </script>
+</body>
+</html>
