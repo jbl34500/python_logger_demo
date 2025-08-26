@@ -20,14 +20,14 @@
 <body>
   <h1>Démo Python Logger</h1>
   <p>Clic the button to download the file :</p>
-  <button id="githubBtn">Voir sur GitHub</button>
+  <button id="githubBtn">See GitHub</button>
 
   <script>
     document.getElementById('githubBtn').addEventListener('click', () => {
       // Envoi d'un événement à Google Analytics
       gtag('event', 'click_github', {
         'event_category': 'Navigation',
-        'event_label': 'Accès GitHub README'
+        'event_label': 'GitHub access'
       });
 
       // Redirection vers ton dépôt GitHub
@@ -37,3 +37,4 @@
 </body>
 
 </html>
+
